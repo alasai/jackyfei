@@ -1,2 +1,2 @@
 # jackyfei
-demo
+just a demo,for exercise
