@@ -29,25 +29,25 @@ namespace iMvc
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IHostingEnvironment env,IApplicationBuilder app, IApplicationLifetime lifetime)
         {
-            app.Use(async (context, next) =>
-            {
-                await context.Response.WriteAsync("fisrt……");
-                await next.Invoke();
-            });
+            // app.Use(async (context, next) =>
+            // {
+            //     await context.Response.WriteAsync("fisrt……");
+            //     await next.Invoke();
+            // });
 
-            app.Use(
-                    next=> {
-                            return (context) =>
-                            {
-                                context.Response.WriteAsync("second……");
-                                return next.Invoke(context);
-                            };
-                        }
-                    );
+            // app.Use(
+            //         next=> {
+            //                 return (context) =>
+            //                 {
+            //                     context.Response.WriteAsync("second……");
+            //                     return next.Invoke(context);
+            //                 };
+            //             }
+            //         );
 
             app.Run(async (context) =>
             {
-                await context.Response.WriteAsync("third……");
+                // await context.Response.WriteAsync("third……");
                 
                 //await context.Response.WriteAsync($"ContentRootPath={env.ContentRootPath}");
                 //await context.Response.WriteAsync($"EnvironmentName={env.EnvironmentName}");

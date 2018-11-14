@@ -23,11 +23,11 @@ namespace iMvc
                 {
                     //覆盖配置文件
                     builder.AddJsonFile("appsettings.json", false, true);
-                    builder.AddCommandLine(args);
+                    //builder.AddCommandLine(args);
                 })
 
                 //更改启动URL
-                .UseUrls("http://localhost:5001")
+                //.UseUrls("http://localhost:5001")
                 .UseStartup<Startup>();
     }
 }
