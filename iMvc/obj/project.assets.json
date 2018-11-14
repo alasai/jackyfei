@@ -12224,11 +12224,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\github\\iMvc\\iMvc.csproj",
+      "projectUniqueName": "F:\\github\\jackyfei\\iMvc\\iMvc.csproj",
       "projectName": "iMvc",
-      "projectPath": "F:\\github\\iMvc\\iMvc.csproj",
+      "projectPath": "F:\\github\\jackyfei\\iMvc\\iMvc.csproj",
       "packagesPath": "C:\\Users\\jackyfei\\.nuget\\packages\\",
-      "outputPath": "F:\\github\\iMvc\\obj\\",
+      "outputPath": "F:\\github\\jackyfei\\iMvc\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

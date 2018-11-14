@@ -10156,11 +10156,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\github\\iMvcTest\\iMvcTest.csproj",
+      "projectUniqueName": "F:\\github\\jackyfei\\iMvcTest\\iMvcTest.csproj",
       "projectName": "iMvcTest",
-      "projectPath": "F:\\github\\iMvcTest\\iMvcTest.csproj",
+      "projectPath": "F:\\github\\jackyfei\\iMvcTest\\iMvcTest.csproj",
       "packagesPath": "C:\\Users\\jackyfei\\.nuget\\packages\\",
-      "outputPath": "F:\\github\\iMvcTest\\obj\\",
+      "outputPath": "F:\\github\\jackyfei\\iMvcTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -10180,8 +10180,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "F:\\github\\iMvc\\iMvc.csproj": {
-              "projectPath": "F:\\github\\iMvc\\iMvc.csproj"
+            "F:\\github\\jackyfei\\iMvc\\iMvc.csproj": {
+              "projectPath": "F:\\github\\jackyfei\\iMvc\\iMvc.csproj"
             }
           }
         }

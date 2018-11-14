@@ -13576,11 +13576,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\github\\iDemo\\iDemo.csproj",
+      "projectUniqueName": "F:\\github\\jackyfei\\iDemo\\iDemo.csproj",
       "projectName": "iDemo",
-      "projectPath": "F:\\github\\iDemo\\iDemo.csproj",
+      "projectPath": "F:\\github\\jackyfei\\iDemo\\iDemo.csproj",
       "packagesPath": "C:\\Users\\jackyfei\\.nuget\\packages\\",
-      "outputPath": "F:\\github\\iDemo\\obj\\",
+      "outputPath": "F:\\github\\jackyfei\\iDemo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
