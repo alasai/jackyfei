@@ -1,0 +1,14 @@
+F:\github\jackyfei\jwtDemo\bin\Debug\netcoreapp2.1\jwtDemo.deps.json
+F:\github\jackyfei\jwtDemo\bin\Debug\netcoreapp2.1\jwtDemo.runtimeconfig.json
+F:\github\jackyfei\jwtDemo\bin\Debug\netcoreapp2.1\jwtDemo.runtimeconfig.dev.json
+F:\github\jackyfei\jwtDemo\bin\Debug\netcoreapp2.1\jwtDemo.dll
+F:\github\jackyfei\jwtDemo\bin\Debug\netcoreapp2.1\jwtDemo.pdb
+F:\github\jackyfei\jwtDemo\obj\Debug\netcoreapp2.1\jwtDemo.csprojAssemblyReference.cache
+F:\github\jackyfei\jwtDemo\obj\Debug\netcoreapp2.1\jwtDemo.csproj.CoreCompileInputs.cache
+F:\github\jackyfei\jwtDemo\obj\Debug\netcoreapp2.1\jwtDemo.RazorAssemblyInfo.cache
+F:\github\jackyfei\jwtDemo\obj\Debug\netcoreapp2.1\jwtDemo.RazorAssemblyInfo.cs
+F:\github\jackyfei\jwtDemo\obj\Debug\netcoreapp2.1\jwtDemo.AssemblyInfoInputs.cache
+F:\github\jackyfei\jwtDemo\obj\Debug\netcoreapp2.1\jwtDemo.AssemblyInfo.cs
+F:\github\jackyfei\jwtDemo\obj\Debug\netcoreapp2.1\jwtDemo.RazorTargetAssemblyInfo.cache
+F:\github\jackyfei\jwtDemo\obj\Debug\netcoreapp2.1\jwtDemo.dll
+F:\github\jackyfei\jwtDemo\obj\Debug\netcoreapp2.1\jwtDemo.pdb

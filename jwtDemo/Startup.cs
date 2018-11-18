@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -14,35 +14,48 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
-namespace iWebapi
+
+namespace jwtDemo
 {
-    public class Startup
+   public class Startup
     {
+        public IConfiguration _configuration { get; set; }
         public Startup(IConfiguration configuration)
         {
-            Configuration = configuration;
+            _configuration = configuration;
         }
 
-        public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //新建JSON配置和对应的实体映射
-            services.Configure<JwtSetting>(Configuration);
+            services.Configure<JwtSetting>(_configuration.GetSection("JwtSetting"));
+
             var jwtSetting= new JwtSetting();
-            Configuration.Bind("JwtSetting",jwtSetting);
+            _configuration.Bind("JwtSetting",jwtSetting);
 
             //JWT相关参数的配置
             services.AddAuthentication(options=>{
                 options.DefaultAuthenticateScheme =JwtBearerDefaults.AuthenticationScheme;
                 options.DefaultChallengeScheme =JwtBearerDefaults.AuthenticationScheme;
             }).AddJwtBearer(o=>{
-                o.TokenValidationParameters=new TokenValidationParameters{
-                    ValidIssuer=jwtSetting.ValidIssuer,
-                    ValidAudience=jwtSetting.ValidAudience,
-                    IssuerSigningKey=new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSetting.IssuerSigningKey))
+                o.TokenValidationParameters = new TokenValidationParameters{
+                    ValidIssuer = jwtSetting.Issuer,
+                    ValidAudience=jwtSetting.Audience,
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSetting.SecretKey))
                 };
+
+                //清除默认验证
+                //o.SecurityTokenValidators.Clear();
+
+                //自定义Header参数
+                // o.Events =new JwtBearerEvents(){
+                //     OnMessageReceived = context =>{
+                //         var token = context.Request.Headers["token"];
+                //         context.Token =token.FirstOrDefault();
+                //         return Task.CompletedTask;
+                //     }
+                // };
             });
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
