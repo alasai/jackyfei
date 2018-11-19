@@ -46,9 +46,11 @@ namespace jwtDemo
                 };
 
                 //清除默认验证
-                //o.SecurityTokenValidators.Clear();
-
-                //自定义Header参数
+                // o.SecurityTokenValidators.Clear();
+                // //自定义ValidateToken
+                // o.SecurityTokenValidators.Add(new MyValidateToken());
+                
+                // //自定义Header参数
                 // o.Events =new JwtBearerEvents(){
                 //     OnMessageReceived = context =>{
                 //         var token = context.Request.Headers["token"];

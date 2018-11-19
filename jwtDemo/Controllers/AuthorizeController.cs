@@ -25,7 +25,7 @@ namespace jwtDemo.Controllers
 
         // GET api/values
         [HttpPost]
-        public IActionResult GetToken(LoginModule login)
+        public IActionResult Get(LoginModule login)
         {
             if(ModelState.IsValid)
             {
@@ -37,6 +37,7 @@ namespace jwtDemo.Controllers
                 var claims =new Claim[]{
                     new Claim(ClaimTypes.Name,"jackyfei"),
                     new Claim(ClaimTypes.Role,"admin"),
+                    //new Claim("SuperAdminOnly","true"),
                 };
 
                 var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtSetting.SecretKey));

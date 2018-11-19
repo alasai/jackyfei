@@ -9,7 +9,8 @@ namespace jwtDemo.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
+    //[Authorize(Policy="SuperAdminOnly")]
+    [Authorize(Roles="admin")]
     public class ValuesController : ControllerBase
     {
         // GET api/values
