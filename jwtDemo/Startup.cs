@@ -29,6 +29,12 @@ namespace jwtDemo
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //配置授权策略必须为Admin
+            services.AddAuthorization(Options=>{
+                Options.AddPolicy("Admin",policy=>policy.RequireClaim("Admin"));
+
+            });
+
             services.Configure<JwtSetting>(_configuration.GetSection("JwtSetting"));
 
             var jwtSetting= new JwtSetting();
@@ -60,6 +66,11 @@ namespace jwtDemo
                 // };
             });
 
+            //配置授权策略必须为Admin
+            services.AddAuthorization(Options=>{
+                Options.AddPolicy("Admin",policy=>policy.RequireClaim("Admin"));
+
+            });
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 

@@ -36,8 +36,8 @@ namespace jwtDemo.Controllers
 
                 var claims =new Claim[]{
                     new Claim(ClaimTypes.Name,"jackyfei"),
-                    new Claim(ClaimTypes.Role,"admin"),
-                    //new Claim("SuperAdminOnly","true"),
+                    //new Claim(ClaimTypes.Role,"admin"),
+                    new Claim("Admin","true"),
                 };
 
                 var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtSetting.SecretKey));
